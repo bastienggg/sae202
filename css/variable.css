@@ -1,7 +1,7 @@
 :root {
-  --primary-color: #ff0000;
-  --secondary-color: #00ff00;
-  --accent-color: #0000ff;
+  --light-blue: #0066cc;
+  --mid-blue: #1a2e6b;
+  --dark-blue: #121236;
   --font-size-small: 1rem;
   --font-size-medium: 1.5rem;
   --font-size-large: 2rem;

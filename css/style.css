@@ -203,9 +203,11 @@ body {
 
 .titre {
   font-size: var(--font-size-title);
+  font-weight: bold;
 }
 .description {
   font-size: var(--font-size-normal);
+  line-height: 2rem;
 }
 
 .main {
@@ -217,15 +219,279 @@ body {
   padding: 1rem;
 }
 
-.main__block1 {
+.main__block1,
+.main__block2 {
+  /* display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center; */
+  gap: 0rem;
+  width: 100%;
+  /* height: 69rem; */
+  margin: 1.5rem;
+  border: solid 25px white;
+}
+
+.main__Sblock0 {
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 0rem;
+  gap: 5rem;
   width: 100%;
-  height: 69rem;
-  margin: 1.5rem;
+  height: 100%;
+  padding: 5rem;
+}
 
-  border: solid 25px white;
+.raquette1 {
+  position: absolute;
+  z-index: -10;
+  top: 1%;
+  left: 0.5%;
+  scale: 0.8;
+}
+
+.raquette2 {
+  position: absolute;
+  scale: 0.8;
+  z-index: -10;
+  top: -3%;
+  right: -2%;
+}
+
+.balle1 {
+  position: absolute;
+  bottom: -1%;
+  left: 55%;
+  scale: 0.5;
+}
+
+.Sblock__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #1a2e6b;
+  border-radius: 2rem;
+}
+
+.Sblock__card:hover {
+  cursor: pointer;
+  scale: 1.2;
+  background-color: #0066cc;
+  color: black;
+}
+
+.telephone1-1 {
+  scale: 0.7;
+  position: absolute;
+  right: 0%;
+  bottom: -20%;
+}
+
+/* 
+plan de gens qui joue au ping pong plan de gens qui s'amuse plan de gens qui s'amuse 
+*/
+
+.card__txt {
+  font-size: 0.75rem;
+}
+.main__sblock2 {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem;
+}
+.nous__text {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+.profilpicture__container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: space-between;
+}
+.profilpicture {
+  border: solid #c4473e 0.25rem;
+  width: 6.75rem;
+  height: 6.75rem;
+  flex-shrink: 0;
+  border-radius: 30rem;
+}
+.main__sblock3 {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  gap: 1rem;
+  background-color: var(--mid-blue);
+  padding-bottom: 3rem;
+}
+.idee__text {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+.idee__mockup {
+  scale: 0.9;
+  position: absolute;
+  right: -5%;
+}
+.number3 {
+  display: flex;
+  scale: 1;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.main__sblock4 {
+  padding-bottom: 1.5rem;
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+.dispo__container {
+  display: flex;
+  flex-direction: column;
+}
+.dispo__btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.dispo__descriptions {
+  width: 85%;
+  margin: 1rem;
+}
+.dispo__logo {
+  margin-right: 1rem;
+}
+.store__container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.dl__btn {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 3.3125rem;
+  border: 1px var(--dark-blue);
+  background-color: var(--light-blue);
+  text-decoration: none;
+}
+.main__sblock5 {
+  background-color: var(--mid-blue);
+  padding-bottom: 1rem;
+}
+.main__sblock5-rules {
+  display: flex;
+  flex-direction: row;
+  padding-left: 1.5rem;
+}
+.rules__img {
+  scale: 0.6;
+}
+.rules__text {
+  display: flex;
+  flex-direction: column;
+}
+.rules__descriptions {
+  width: 65%;
+}
+.main__sblock5-useapp {
+  display: flex;
+  flex-direction: row;
+  padding-left: 1rem;
+}
+.useapp__img {
+  scale: 0.8;
+}
+.useapp__text {
+  display: flex;
+  flex-direction: column;
+}
+.useapp__descriptions {
+  width: 65%;
+}
+.bateaux {
+  width: 80%;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap");
+@import url(../../../css_reset/reset.css);
+@import url(../../../css_reset/variable.css);
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 2rem 5rem 2rem 5rem;
+
+  font-family: "Roboto", sans-serif;
+  color: var(--color-white);
+
+  background-color: var(--color-primary);
+}
+
+.footer__top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3rem;
+
+  width: 100%;
+  padding: 1.5em;
+
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  list-style: none;
+  border-bottom: solid 1px var(--color-grey);
+}
+
+.footer__bottom {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+
+  width: 100%;
+  padding-top: 1.5rem;
+}
+
+.footer__titre {
+  color: var(--color-white);
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.footer__txt {
+  width: 25rem;
+
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.625rem;
+}
+
+.footer__ctact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 4rem;
+
+  font-size: 1rem;
+  font-weight: 400;
+
+  list-style: none;
 }
